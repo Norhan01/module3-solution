@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    /* color: #fff; */
+    /* background-color: #61122f; */
+    font-family: 'Oxygen', sans-serif;
+  }
+
+#nav-list{
+    text-align: center;
+}
+#nav-list a:hover{
+    background-color: rgb(200, 231, 239);
+}
+#header-nav{
+    border-bottom: 2px solid;
+}
+/* Navbar End */
+
+/* Section */
+div > a{
+    text-align: center;
+}
+div > .section{
+    text-align: justify;
+    background-color: rgb(235, 231, 239);
+    padding: 10px 20px 10px 20px;
+    margin: 15px 15px 15px 15px;
+    font-family:'Times New Roman', Times, serif;
+}
+.col-md-4{
+    text-align: center;
+}
+
+/* Section End*/
+.text-center{
+    font-weight:bolder;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+} 
+/* Desktop Mode */
+@media (min-width: 1200px) {
+        .col-lg-4 {
+          width: 33%;
+        }
+        .container{
+            width: 100%;
+            padding-left: 50px;
+        }
+        #header-nav{
+            height: 100px;
+        }
+        .navbar-brand{ /*Food LLC */
+            margin-top: 20px;
+            font-size: 40px;
+            
+        }
+ 
+  }
+  /* Tablet Mode  */
+  @media (min-width: 992px) and (max-width: 1199px)  {
+    .row{
+        width: 98%;
+        margin-left: 3px;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    .col-md-12 {
+      width: 100%;
+    }
+
+    div > .section{
+        margin-right: 3px;
+    }
+    .col-lg-4{
+        margin: 0px;
+        padding: 0px;
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+    .container{
+    width: 100%;
+    padding-left: 50px;
+    }
+    .navbar-brand{ /*Food LLC */
+        margin-top: 10px;
+        font-size: 35px;
+    }
+
+  }
+
+  /* Mobile Mode*/
+  @media (min-width: 768) and (max-width: 991px) {
+    .col-lg-4{
+        width: 100%;
+        margin-left: 10px;
+        padding: 0px;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    .container{
+     width: 100%;
+     padding-left: 50px;
+    }
+    .navbar-brand{ /*Food LLC */
+        margin-top: 5px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .navbar-brand{ /*Food LLC */
+        margin-top: 20px;
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 375) and (max-width: 767) {
+    .navbar-brand{ /*Food LLC */
+        font-size: 100px;
+        font-weight: bold;
+    }
+    .col-lg-4{
+        width: 100%;
+        margin-left: 10px;
+        padding: 0px;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    .container{
+     width: 100%;
+     padding-left: 50px;
+     border: 2px solid gray;
+    }
+}
